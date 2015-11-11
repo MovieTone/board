@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name = "com.board.Ad" table = "ads">
+	    <id name = "id" column = "id" type = "integer">
+	    	<generator class = "increment"/>
+	    </id>
+	    <property name = "name" column = "adName" type = "string"/>
+	    <property name = "headline" type = "string"/>
+	    <property name = "rubric" type = "string"/>
+	    <property name = "text" column = "adText" type = "string"/>
+	    <property name = "time" column = "adTime" type = "long"/>
+    </class>
+</hibernate-mapping>
